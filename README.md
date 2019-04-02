@@ -10,6 +10,9 @@ The scripts were written by Daniel M. Wolpert, Mate Lengyel, and Gabor Lengyel
 
 Instructions:
 
+0. download that data from the following osf project
+https://osf.io/456qb/
+
 1. Run VisualHapticSL_main.m in Matlab (version 9.2 or newer)
 
 2. Run BayesFactor.r in R (version 3.5.1 or newer)
