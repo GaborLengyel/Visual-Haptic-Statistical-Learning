@@ -111,7 +111,8 @@ for experiment=1:length(exp_name)
     
     h=colorbar;
     h.Label.String = 'correlation (\rho)';
-    set(h,'Limit',[-0.3 1]')
+    caxis([-0.3 1]);
+    %set(h,'Limit',[-0.3 1]')
     axis equal
     axis([5 25 5 36])
     nudge_plot(gca,-0.2,0)
