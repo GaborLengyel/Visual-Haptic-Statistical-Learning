@@ -70,8 +70,7 @@ hb=bar(cb,eu,beu,'BarWidth',0.7,'BarLayout','Stacked','LineWidth',1);
 for i=1:length(eu)
     set(hb(i),'FaceColor',cm(round(eu(i)*100)+1,:),'EdgeColor',[0 0 0],'LineWidth',1,'Clip','on');
 end
-set(cb,'FontSize',16,'LineWidth',2,'box','off', ...
-    'XTick',round(eu,2),'YTick',[0 4 8]);
+set(cb,'FontSize',16,'LineWidth',2,'box','off', 'XTick',round(eu*100)/100,'YTick',[0 4 8]);
 xlabel('explicitness');
 ylabel('number of participants');
 
