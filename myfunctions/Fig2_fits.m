@@ -200,10 +200,10 @@ for experiment=exp_name
         haptic_score = zeros(1,npairs);
         for tp=1:npairs
 
-            tmp2_pair = tmp2((sum(tmp2.symbols1==true_pairs(tp,:),2)==2) | (sum(tmp2.symbols2==true_pairs(tp,:),2)==2),:);
+            tmp2_pair = tmp2((((tmp2.symbols1(:,1)==true_pairs(tp,1))+(tmp2.symbols1(:,2)==true_pairs(tp,2)))==2) | (((tmp2.symbols2(:,1)==true_pairs(tp,1)) + (tmp2.symbols2(:,2)==true_pairs(tp,2)))==2),:);
             visual_score(tp)= mean((tmp2_pair.truepair1 & tmp2_pair.Choice==1) | (tmp2_pair.truepair2 & tmp2_pair.Choice==2));
 
-            tmp_pair = tmp((sum(tmp.symbols1==true_pairs(tp,:),2)==2) | (sum(tmp.symbols2==true_pairs(tp,:),2)==2),:);
+            tmp_pair = tmp((((tmp.symbols1(:,1)==true_pairs(tp,1))+(tmp.symbols1(:,2)==true_pairs(tp,2)))==2) | (((tmp.symbols2(:,1)==true_pairs(tp,1)) + (tmp.symbols2(:,2)==true_pairs(tp,2)))==2),:);
             haptic_score(tp)= mean(tmp_pair.PullForce(tmp_pair.breakforce==45)) - mean(tmp_pair.PullForce((tmp_pair.breakforce==15)&(tmp_pair.truepair1==1)&(tmp_pair.truepair2==1)));
 
         end
