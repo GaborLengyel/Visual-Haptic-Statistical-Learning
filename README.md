@@ -1,9 +1,10 @@
 # Visual-Haptic-Statistical-Learning
 
-Analyses of the following study
+This repository contains the analyses of the following study:
+
 title: Unimodal statistical learning produces multimodal object-like representations
 Authors: Gábor Lengyel, Goda Žalalytė, Alexandros Pantelides, James N. Ingram, József Fiser, Máté Lengyel & Daniel M. Wolpert
-Published: 
+DOI: https://doi.org/10.7554/eLife.43942
 
 The scripts were written by Daniel M. Wolpert, Mate Lengyel, and Gabor Lengyel
 
